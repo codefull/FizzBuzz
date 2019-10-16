@@ -26,25 +26,32 @@ namespace WindowsFormsApplication1
 
         }
 
-        void shortVariantFB()
+        String[] shortVariantFB()
         {
+            String[] lines = new String [100];
             for (int i = 1; i <= 100; i++)
             {
+
                 if (fb.isFizz(i))
-                    Console.Write("Fizz");
+                    lines[i - 1] = "Fizz";
 
                 if (fb.isBuzz(i))
-                    Console.Write("Buzz");
+                    lines[i - 1] += "Buzz";
 
                 if (fb.isNotFB(i))
-                    Console.Write(i.ToString());
-
+                    lines[i - 1] = i.ToString();
             }
+            return lines;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox1.Lines =  shortVariantFB();
         }
     }
 }
