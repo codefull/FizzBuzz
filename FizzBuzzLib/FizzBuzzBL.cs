@@ -10,22 +10,22 @@ namespace FizzBuzzLib
     {
         public bool isFizz(int n)
         {
-            return false;
+            return (n % 3 == 0);
         }
 
         public bool isBuzz(int n)
         {
-            return false;
+            return (n % 5 == 0);
         }
 
         public bool isNotFB(int n)
         {
-            return false;
+            return ( (n % 3 != 0) && (n % 5 != 0) );
         }
 
         public bool isFizzBuzz(int n)
         {
-            return false;
+            return ((n % 3 == 0) && (n % 5 == 0));
         }
     }
 }
