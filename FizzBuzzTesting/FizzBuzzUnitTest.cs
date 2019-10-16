@@ -1,10 +1,12 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using FizzBuzzLib;
 
-namespace FizzBuzzTesting
+
+namespace FizzBuzzTest
 {
     [TestClass]
-    public class UnitTest1
+    public class FizzBuzzUnitTest
     {
         [TestMethod]
         public void TestMethod1()
